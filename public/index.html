@@ -131,4 +131,36 @@
     };
     firebase.initializeApp(config);
   </script>
+  <script type="text/javascript">
+    function writeColor(hex) {
+      // A post entry.
+      var colorData = {
+        color: hex
+      };
+      // Get a key for a new Post.
+      var newColorKey = firebase.database().ref().child('colors').push().key;
+    }
+
+    function writeUserData() {
+      firebase.database().ref('setcolor/').child('hex').set('#123456')
+      return console.log('guardado')
+    }
+  </script>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '355669474823465',
+      xfbml      : true,
+      version    : 'v2.7'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 </html>
