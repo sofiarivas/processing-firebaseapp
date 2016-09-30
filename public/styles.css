@@ -1,0 +1,87 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+  background-color: #757575;
+  color: rgba(0,0,0,0.87);
+}
+
+a {
+  color: rgb(3,155,229);
+}
+canvas {
+  margin: auto;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid;
+}
+
+#message {
+  float:left;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+  border-radius: 2px;
+  background: white;
+  padding: 16px 24px;
+  margin: 3rem 2rem;
+}
+
+#message h1 {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+#message p {
+  text-align: center;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+#message ul {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  text-align: center;
+}
+
+#message li a {
+  display: inline-block;
+  padding: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  background: rgb(3,155,229);
+  color: white;
+  border: 1px solid rgb(3,155,229);
+  border-radius: 3px;
+  font-size: 14px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+#message button {
+  display: block;
+  margin: auto;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+  padding: 0.8rem 2rem;
+  font-size:10px;
+  background-color: #09ffc8;
+  border: none;
+  cursor: pointer;
+}
+#message button:hover {
+  background-color: #046f57;
+  color: white;
+}
+#message button:focus {
+  background: #09ffc8;
+  color:#046f57;
+  outline: none;
+}
+#color-container {
+  display: inline-block;
+  background-color: white;
+  padding: 0.8rem 2rem;
+}
